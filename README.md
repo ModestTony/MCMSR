@@ -107,7 +107,8 @@ All logging files in the training process, *e.g.*, log message, checkpoints, and
    ./options/train/stage3_restoration_mse.yml
    python mmsr/train.py -opt "options/train/stage3_restoration_mse.yml"
    ```
-
-## Contact
-
-If you have any question, please feel free to contact us via `yuming002@ntu.edu.sg`.
+   
+## References
+1. [Robust Reference-based Super-Resolution via C2-Matching (CVPR 2021)](
+https://arxiv.org/abs/2106.01863
+)
