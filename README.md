@@ -38,6 +38,8 @@
 
 ### Test
 
+Downloading the pretrained models from this [Link](https://drive.google.com/file/d/1MX8xxvEDzcfJHot_keGxVlnfvQ9QCISV/view?usp=sharing)
+
 We provide quick test code with the pretrained model.
 
 1. Modify the paths to dataset and pretrained model in the following yaml files for configuration.
