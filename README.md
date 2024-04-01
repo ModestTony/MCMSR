@@ -38,7 +38,7 @@
 
 ### Test
 
-Downloading the pretrained models from this [Link](https://drive.google.com/file/d/1MX8xxvEDzcfJHot_keGxVlnfvQ9QCISV/view?usp=sharing)
+Downloading the pretrained models from this [Link](https://drive.google.com/drive/folders/1nq2OEmNYZn-i57UnOqRaOgQNgTfBuCc8?usp=sharing)
 
 We provide quick test code with the pretrained model.
 
