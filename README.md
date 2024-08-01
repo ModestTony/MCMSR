@@ -34,37 +34,6 @@
     python setup.py build develop
     ```
 
-## Get Started
-
-### Test
-
-Downloading the pretrained models from this [Link](https://drive.google.com/drive/folders/1nq2OEmNYZn-i57UnOqRaOgQNgTfBuCc8?usp=sharing)
-
-We provide quick test code with the pretrained model.
-
-1. Modify the paths to dataset and pretrained model in the following yaml files for configuration.
-
-    ```bash
-    ./options/test/test_C2_matching.yml
-    ./options/test/test_C2_matching_mse.yml
-    ```
-
-1. Run test code for models trained using **GAN loss**.
-
-    ```bash
-    python mmsr/test.py -opt "options/test/test_C2_matching.yml"
-    ```
-
-   Check out the results in `./results`.
-
-1. Run test code for models trained using only **reconstruction loss**.
-
-    ```bash
-    python mmsr/test.py -opt "options/test/test_C2_matching_mse.yml"
-    ```
-
-   Check out the results in in `./results`
-
 ### Train
 
 All logging files in the training process, *e.g.*, log message, checkpoints, and snapshots, will be saved to `./experiments` and `./tb_logger` directory.
