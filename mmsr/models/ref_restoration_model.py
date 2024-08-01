@@ -346,11 +346,8 @@ class RefRestorationModel(SRModel):
                 gt_img_y * 255,
                 crop_border=self.opt['crop_border'])
 
-            if dataset_name[0] == 'W': avg_psnr_y += (psnr_y+k1); avg_ssim_y += (ssim_y)
-            if dataset_name[0] == 'M': avg_psnr_y += (psnr_y+k2); avg_ssim_y += (ssim_y + k21)
-            if dataset_name[0] == 'U': avg_psnr_y += (psnr_y+k3); avg_ssim_y += (ssim_y+k21+k21)
-            if dataset_name[0] == 'S': avg_psnr_y += (psnr_y+k4); avg_ssim_y += (ssim_y + k21)
-            if dataset_name[0] == 'C': avg_psnr_y += (psnr_y); avg_ssim_y += (ssim_y)
+            avg_psnr_y += psnr_y
+            avg_ssim_y += ssim_y
 
             if not self.is_train:
                 logger.info(f'# img {img_name} # PSNR: {psnr:.4e} 'f'# PSNR_Y: {psnr_y:.4e} # SSIM_Y: {ssim_y:.4e}.')
